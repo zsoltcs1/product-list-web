@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Product Listings</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #473c3c;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        .product-item {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            flex: 1 1 calc(33.333% - 2rem);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .product-item:hover {
+            transform: scale(1.05);
+        }
+        .product-image img {
+            width: 100%;
+            height: auto;
+        }
+        .product-info {
+            padding: 1rem;
+            text-align: center;
+        }
+        .product-info h2 {
+            font-size: 1.2rem;
+            margin: 0.5rem 0;
+        }
+        .product-info p {
+            color: #555;
+        }
+        .product-info .price {
+            font-size: 1.4rem;
+            color: #333;
+            margin: 0.5rem 0;
+        }
+        .add-to-cart {
+            background: #28a745;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .add-to-cart:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Product Listings</h1>
+    </header>
+    <div class="container">
+        <div class="product-list">
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="https://via.placeholder.com/300" alt="Product 1">
+                </div>
+                <div class="product-info">
+                    <h2>Product 1</h2>
+                    <p>Short description of the product goes here.</p>
+                    <p class="price">29.99€</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="https://via.placeholder.com/300" alt="Product 2">
+                </div>
+                <div class="product-info">
+                    <h2>Product 2</h2>
+                    <p>Short description of the product goes here.</p>
+                    <p class="price">39.99€</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="https://via.placeholder.com/300" alt="Product 3">
+                </div>
+                <div class="product-info">
+                    <h2>Product 3</h2>
+                    <p>Short description of the product goes here.</p>
+                    <p class="price">49.99€</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="https://via.placeholder.com/300" alt="Product 4">
+                </div>
+                <div class="product-info">
+                    <h2>Product 4</h2>
+                    <p>Short description of the product goes here.</p>
+                    <p class="price">59.99€</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="https://via.placeholder.com/300" alt="Product 5">
+                </div>
+                <div class="product-info">
+                    <h2>Product 5</h2>
+                    <p>Short description of the product goes here.</p>
+                    <p class="price">19.99€</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="https://via.placeholder.com/300" alt="Product 6">
+                </div>
+                <div class="product-info">
+                    <h2>Product 6</h2>
+                    <p>Short description of the product goes here.</p>
+                    <p class="price">12.99€</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', () => {
+                alert('Product added to the cart!');
+            });
+        });
+    </script>
+</body>
+</html>
